@@ -1830,5 +1830,53 @@
     "cheapest": 50,
     "marketUrl": "https://steamcommunity.com/market/listings/730/M4A4%20%7C%20Griffin%20(Field-Tested)?filter=Katowice%202014",
     "checkedAt": "2026-03-19T12:04:20.854Z"
+  },
+  {
+    "skin": "M4A4 | Jungle Tiger (Field-Tested)",
+    "sticker": "Katowice 2014",
+    "totalListings": 2,
+    "cheapest": 57.5,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/M4A4%20%7C%20Jungle%20Tiger%20(Field-Tested)?filter=Katowice%202014",
+    "checkedAt": "2026-03-19T12:05:46.400Z"
+  },
+  {
+    "skin": "M4A4 | Jungle Tiger (Field-Tested)",
+    "sticker": "Howling Dawn",
+    "totalListings": 1,
+    "cheapest": 133.41,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/M4A4%20%7C%20Jungle%20Tiger%20(Field-Tested)?filter=Howling%20Dawn",
+    "checkedAt": "2026-03-19T12:05:51.748Z"
+  },
+  {
+    "skin": "M4A4 | Jungle Tiger (Field-Tested)",
+    "sticker": "Crown (Foil)",
+    "totalListings": 1,
+    "cheapest": 242.6,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/M4A4%20%7C%20Jungle%20Tiger%20(Field-Tested)?filter=Crown%20(Foil)",
+    "checkedAt": "2026-03-19T12:05:57.088Z"
+  },
+  {
+    "skin": "M4A4 | Modern Hunter (Field-Tested)",
+    "sticker": "Katowice 2014",
+    "totalListings": 1,
+    "cheapest": 1318.66,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/M4A4%20%7C%20Modern%20Hunter%20(Field-Tested)?filter=Katowice%202014",
+    "checkedAt": "2026-03-19T12:06:34.334Z"
+  },
+  {
+    "skin": "M4A4 | Radiation Hazard (Field-Tested)",
+    "sticker": "Katowice 2014",
+    "totalListings": 6,
+    "cheapest": 188.68,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/M4A4%20%7C%20Radiation%20Hazard%20(Field-Tested)?filter=Katowice%202014",
+    "checkedAt": "2026-03-19T12:08:10.156Z"
+  },
+  {
+    "skin": "M4A4 | Radiation Hazard (Field-Tested)",
+    "sticker": "Howling Dawn",
+    "totalListings": 2,
+    "cheapest": 600,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/M4A4%20%7C%20Radiation%20Hazard%20(Field-Tested)?filter=Howling%20Dawn",
+    "checkedAt": "2026-03-19T12:08:15.498Z"
   }
 ]
