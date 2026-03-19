@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Steam Sticker Search Results</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #1b2838; color: #c6d4df; font-family: 'Segoe UI', Arial, sans-serif; padding: 20px; }
+  h1 { color: #66c0f4; margin-bottom: 5px; }
+  .subtitle { color: #8f98a0; margin-bottom: 20px; font-size: 14px; }
+  .controls { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; align-items: center; }
+  .controls button { background: #2a475e; color: #66c0f4; border: 1px solid #66c0f4; padding: 8px 16px; border-radius: 3px; cursor: pointer; font-size: 13px; }
+  .controls button:hover { background: #66c0f4; color: #1b2838; }
+  .controls button.active { background: #66c0f4; color: #1b2838; font-weight: bold; }
+  .controls select, .controls input { background: #2a475e; color: #c6d4df; border: 1px solid #4a6a8a; padding: 8px 12px; border-radius: 3px; font-size: 13px; }
+  .stats { background: #2a475e; padding: 12px 18px; border-radius: 5px; margin-bottom: 20px; display: flex; gap: 30px; flex-wrap: wrap; }
+  .stat { text-align: center; }
+  .stat-val { font-size: 28px; font-weight: bold; color: #66c0f4; }
+  .stat-label { font-size: 12px; color: #8f98a0; }
+  .sticker-section { margin-bottom: 30px; }
+  .sticker-header { font-size: 20px; color: #fff; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2px solid #2a475e; }
+  .sticker-header span { color: #8f98a0; font-size: 14px; font-weight: normal; }
+  table { width: 100%; border-collapse: collapse; margin-bottom: 10px; }
+  th { background: #2a475e; color: #66c0f4; padding: 10px 12px; text-align: left; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; cursor: pointer; user-select: none; }
+  th:hover { background: #3a5a7e; }
+  td { padding: 10px 12px; border-bottom: 1px solid #2a3a4e; font-size: 14px; }
+  tr:hover td { background: #1e3a52; }
+  .price { color: #a4d007; font-weight: bold; font-size: 16px; }
+  .listings { color: #8f98a0; }
+  a { color: #66c0f4; text-decoration: none; }
+  a:hover { text-decoration: underline; color: #fff; }
+  .buy-btn { display: inline-block; background: #4c6b22; color: #a4d007; padding: 4px 12px; border-radius: 3px; font-size: 12px; font-weight: bold; }
+  .buy-btn:hover { background: #5c8a22; text-decoration: none; }
+  .refresh-note { color: #8f98a0; font-size: 12px; }
+  .katowice { color: #e74c3c; }
+  .howling { color: #e67e22; }
+  .crown { color: #f1c40f; }
+  .no-results { color: #8f98a0; font-style: italic; padding: 20px; }
+  .auto-refresh { display: flex; align-items: center; gap: 8px; }
+  .auto-refresh label { color: #8f98a0; font-size: 13px; }
+  #countdown { color: #66c0f4; font-size: 13px; min-width: 30px; }
+</style>
+</head>
+<body>
+
+<h1>Steam Market Sticker Search</h1>
+<p class="subtitle">Finding guns with Katowice 2014, Howling Dawn, and Crown (Foil) stickers</p>
+
+<div class="controls">
+  <button class="active" onclick="setFilter('all')">All Stickers</button>
+  <button onclick="setFilter('Katowice 2014')"><span class="katowice">Katowice 2014</span></button>
+  <button onclick="setFilter('Howling Dawn')"><span class="howling">Howling Dawn</span></button>
+  <button onclick="setFilter('Crown (Foil)')"><span class="crown">Crown (Foil)</span></button>
+  <select id="sortBy" onchange="render()">
+    <option value="price-asc">Cheapest first</option>
+    <option value="price-desc">Most expensive first</option>
+    <option value="listings-desc">Most listings first</option>
+    <option value="name-asc">Name A-Z</option>
+  </select>
+  <input type="text" id="skinFilter" placeholder="Filter by skin name..." oninput="render()">
+  <div class="auto-refresh">
+    <label><input type="checkbox" id="autoRefresh" checked onchange="toggleAutoRefresh()"> Auto-refresh</label>
+    <span id="countdown">10s</span>
+  </div>
+</div>
+
+<div class="stats" id="stats"></div>
+<div id="content"></div>
+
+<script>
+let results = [];
+let filter = 'all';
+let refreshTimer = null;
+let countdownVal = 10;
+
+async function loadResults() {
+  try {
+    const res = await fetch('results.json?' + Date.now());
+    if (!res.ok) { results = []; return; }
+    results = await res.json();
+  } catch { results = []; }
+  render();
+}
+
+function setFilter(f) {
+  filter = f;
+  document.querySelectorAll('.controls button').forEach(b => b.classList.remove('active'));
+  event.target.closest('button').classList.add('active');
+  render();
+}
+
+function render() {
+  const sortBy = document.getElementById('sortBy').value;
+  const nameFilter = document.getElementById('skinFilter').value.toLowerCase();
+
+  let filtered = results;
+  if (filter !== 'all') filtered = filtered.filter(r => r.sticker === filter);
+  if (nameFilter) filtered = filtered.filter(r => r.skin.toLowerCase().includes(nameFilter));
+
+  // Sort
+  filtered.sort((a, b) => {
+    switch (sortBy) {
+      case 'price-asc': return (a.cheapest ?? Infinity) - (b.cheapest ?? Infinity);
+      case 'price-desc': return (b.cheapest ?? 0) - (a.cheapest ?? 0);
+      case 'listings-desc': return b.totalListings - a.totalListings;
+      case 'name-asc': return a.skin.localeCompare(b.skin);
+      default: return 0;
+    }
+  });
+
+  // Stats
+  const totalListings = filtered.reduce((s, r) => s + r.totalListings, 0);
+  const cheapest = filtered.length ? filtered.reduce((m, r) => Math.min(m, r.cheapest ?? Infinity), Infinity) : 0;
+  const stickerCounts = {};
+  for (const r of results) { stickerCounts[r.sticker] = (stickerCounts[r.sticker] || 0) + 1; }
+
+  document.getElementById('stats').innerHTML = `
+    <div class="stat"><div class="stat-val">${filtered.length}</div><div class="stat-label">Skins Found</div></div>
+    <div class="stat"><div class="stat-val">${totalListings}</div><div class="stat-label">Total Listings</div></div>
+    <div class="stat"><div class="stat-val">${cheapest < Infinity ? '$' + cheapest.toFixed(2) : '—'}</div><div class="stat-label">Cheapest</div></div>
+    <div class="stat"><div class="stat-val katowice">${stickerCounts['Katowice 2014'] || 0}</div><div class="stat-label">Katowice 2014</div></div>
+    <div class="stat"><div class="stat-val howling">${stickerCounts['Howling Dawn'] || 0}</div><div class="stat-label">Howling Dawn</div></div>
+    <div class="stat"><div class="stat-val crown">${stickerCounts['Crown (Foil)'] || 0}</div><div class="stat-label">Crown (Foil)</div></div>
+  `;
+
+  if (filtered.length === 0) {
+    document.getElementById('content').innerHTML = '<p class="no-results">No results yet. The search is still running — results will appear as they are found.</p>';
+    return;
+  }
+
+  // Group by sticker if showing all
+  const groups = filter === 'all'
+    ? [['Katowice 2014', 'katowice'], ['Howling Dawn', 'howling'], ['Crown (Foil)', 'crown']]
+    : [[filter, filter === 'Katowice 2014' ? 'katowice' : filter === 'Howling Dawn' ? 'howling' : 'crown']];
+
+  let html = '';
+  for (const [sticker, cls] of groups) {
+    const items = filtered.filter(r => r.sticker === sticker);
+    if (!items.length) continue;
+
+    // Re-sort within group
+    items.sort((a, b) => {
+      switch (sortBy) {
+        case 'price-asc': return (a.cheapest ?? Infinity) - (b.cheapest ?? Infinity);
+        case 'price-desc': return (b.cheapest ?? 0) - (a.cheapest ?? 0);
+        case 'listings-desc': return b.totalListings - a.totalListings;
+        case 'name-asc': return a.skin.localeCompare(b.skin);
+        default: return 0;
+      }
+    });
+
+    html += `<div class="sticker-section">`;
+    html += `<h2 class="sticker-header"><span class="${cls}">${sticker}</span> <span>(${items.length} skins)</span></h2>`;
+    html += `<table><thead><tr><th>Skin</th><th>Listings</th><th>Cheapest</th><th></th></tr></thead><tbody>`;
+    for (const r of items) {
+      const price = r.cheapest ? `$${r.cheapest.toFixed(2)}` : '?';
+      const url = r.marketUrl || `https://steamcommunity.com/market/listings/730/${encodeURIComponent(r.skin)}?filter=${encodeURIComponent(r.sticker)}`;
+      html += `<tr>
+        <td><a href="${url}" target="_blank">${r.skin}</a></td>
+        <td class="listings">${r.totalListings}</td>
+        <td class="price">${price}</td>
+        <td><a class="buy-btn" href="${url}" target="_blank">View on Market</a></td>
+      </tr>`;
+    }
+    html += `</tbody></table></div>`;
+  }
+
+  document.getElementById('content').innerHTML = html;
+}
+
+function toggleAutoRefresh() {
+  if (document.getElementById('autoRefresh').checked) {
+    startAutoRefresh();
+  } else {
+    clearInterval(refreshTimer);
+    document.getElementById('countdown').textContent = '';
+  }
+}
+
+function startAutoRefresh() {
+  countdownVal = 10;
+  clearInterval(refreshTimer);
+  refreshTimer = setInterval(() => {
+    countdownVal--;
+    document.getElementById('countdown').textContent = countdownVal + 's';
+    if (countdownVal <= 0) {
+      countdownVal = 10;
+      loadResults();
+    }
+  }, 1000);
+}
+
+loadResults();
+startAutoRefresh();
+</script>
+</body>
+</html>
