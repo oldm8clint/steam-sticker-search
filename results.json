@@ -1350,5 +1350,37 @@
     "cheapest": 5,
     "marketUrl": "https://steamcommunity.com/market/listings/730/AWP%20%7C%20Safari%20Mesh%20(Field-Tested)?filter=Katowice%202014",
     "checkedAt": "2026-03-19T08:00:44.774Z"
+  },
+  {
+    "skin": "CZ75-Auto | Crimson Web (Field-Tested)",
+    "sticker": "Katowice 2014",
+    "totalListings": 8,
+    "cheapest": 54.58,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/CZ75-Auto%20%7C%20Crimson%20Web%20(Field-Tested)?filter=Katowice%202014",
+    "checkedAt": "2026-03-19T08:06:09.579Z"
+  },
+  {
+    "skin": "CZ75-Auto | Crimson Web (Field-Tested)",
+    "sticker": "Howling Dawn",
+    "totalListings": 1,
+    "cheapest": 300,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/CZ75-Auto%20%7C%20Crimson%20Web%20(Field-Tested)?filter=Howling%20Dawn",
+    "checkedAt": "2026-03-19T08:06:14.917Z"
+  },
+  {
+    "skin": "CZ75-Auto | Green Plaid (Field-Tested)",
+    "sticker": "Katowice 2014",
+    "totalListings": 1,
+    "cheapest": 34.61,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/CZ75-Auto%20%7C%20Green%20Plaid%20(Field-Tested)?filter=Katowice%202014",
+    "checkedAt": "2026-03-19T08:08:50.671Z"
+  },
+  {
+    "skin": "CZ75-Auto | Hexane (Field-Tested)",
+    "sticker": "Katowice 2014",
+    "totalListings": 2,
+    "cheapest": 4.99,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/CZ75-Auto%20%7C%20Hexane%20(Field-Tested)?filter=Katowice%202014",
+    "checkedAt": "2026-03-19T08:09:06.627Z"
   }
 ]
