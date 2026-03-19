@@ -1790,5 +1790,45 @@
     "cheapest": 115.36,
     "marketUrl": "https://steamcommunity.com/market/listings/730/M4A4%20%7C%20Bullet%20Rain%20(Field-Tested)?filter=Katowice%202014",
     "checkedAt": "2026-03-19T11:57:51.530Z"
+  },
+  {
+    "skin": "M4A4 | Desert Storm (Field-Tested)",
+    "sticker": "Katowice 2014",
+    "totalListings": 3,
+    "cheapest": 56.51,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/M4A4%20%7C%20Desert%20Storm%20(Field-Tested)?filter=Katowice%202014",
+    "checkedAt": "2026-03-19T11:59:46.499Z"
+  },
+  {
+    "skin": "M4A4 | Desert-Strike (Field-Tested)",
+    "sticker": "Katowice 2014",
+    "totalListings": 3,
+    "cheapest": 56.66,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/M4A4%20%7C%20Desert-Strike%20(Field-Tested)?filter=Katowice%202014",
+    "checkedAt": "2026-03-19T12:00:02.498Z"
+  },
+  {
+    "skin": "M4A4 | Faded Zebra (Field-Tested)",
+    "sticker": "Katowice 2014",
+    "totalListings": 5,
+    "cheapest": 83.18,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/M4A4%20%7C%20Faded%20Zebra%20(Field-Tested)?filter=Katowice%202014",
+    "checkedAt": "2026-03-19T12:03:32.973Z"
+  },
+  {
+    "skin": "M4A4 | Faded Zebra (Field-Tested)",
+    "sticker": "Howling Dawn",
+    "totalListings": 1,
+    "cheapest": 402.57,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/M4A4%20%7C%20Faded%20Zebra%20(Field-Tested)?filter=Howling%20Dawn",
+    "checkedAt": "2026-03-19T12:03:38.307Z"
+  },
+  {
+    "skin": "M4A4 | Griffin (Field-Tested)",
+    "sticker": "Katowice 2014",
+    "totalListings": 2,
+    "cheapest": 50,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/M4A4%20%7C%20Griffin%20(Field-Tested)?filter=Katowice%202014",
+    "checkedAt": "2026-03-19T12:04:20.854Z"
   }
 ]
