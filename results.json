@@ -1102,5 +1102,21 @@
     "cheapest": 1061.17,
     "marketUrl": "https://steamcommunity.com/market/listings/730/AK-47%20%7C%20First%20Class%20(Field-Tested)?filter=Howling%20Dawn",
     "checkedAt": "2026-03-19T07:03:11.826Z"
+  },
+  {
+    "skin": "AK-47 | Jaguar (Field-Tested)",
+    "sticker": "Katowice 2014",
+    "totalListings": 4,
+    "cheapest": 149.5,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/AK-47%20%7C%20Jaguar%20(Field-Tested)?filter=Katowice%202014",
+    "checkedAt": "2026-03-19T07:08:48.375Z"
+  },
+  {
+    "skin": "AK-47 | Jungle Spray (Field-Tested)",
+    "sticker": "Katowice 2014",
+    "totalListings": 9,
+    "cheapest": 63.42,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/AK-47%20%7C%20Jungle%20Spray%20(Field-Tested)?filter=Katowice%202014",
+    "checkedAt": "2026-03-19T07:09:20.250Z"
   }
 ]
