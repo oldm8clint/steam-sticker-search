@@ -1606,5 +1606,29 @@
     "cheapest": 575.58,
     "marketUrl": "https://steamcommunity.com/market/listings/730/Glock-18%20%7C%20Candy%20Apple%20(Field-Tested)?filter=Howling%20Dawn",
     "checkedAt": "2026-03-19T09:39:22.664Z"
+  },
+  {
+    "skin": "Glock-18 | Groundwater (Field-Tested)",
+    "sticker": "Katowice 2014",
+    "totalListings": 5,
+    "cheapest": 60.65,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/Glock-18%20%7C%20Groundwater%20(Field-Tested)?filter=Katowice%202014",
+    "checkedAt": "2026-03-19T09:43:05.794Z"
+  },
+  {
+    "skin": "Glock-18 | Groundwater (Field-Tested)",
+    "sticker": "Howling Dawn",
+    "totalListings": 1,
+    "cheapest": 667.85,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/Glock-18%20%7C%20Groundwater%20(Field-Tested)?filter=Howling%20Dawn",
+    "checkedAt": "2026-03-19T09:43:11.117Z"
+  },
+  {
+    "skin": "Glock-18 | Night (Field-Tested)",
+    "sticker": "Katowice 2014",
+    "totalListings": 1,
+    "cheapest": 24.26,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/Glock-18%20%7C%20Night%20(Field-Tested)?filter=Katowice%202014",
+    "checkedAt": "2026-03-19T09:44:41.722Z"
   }
 ]
