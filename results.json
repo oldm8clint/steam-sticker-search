@@ -1198,5 +1198,29 @@
     "cheapest": 22.12,
     "marketUrl": "https://steamcommunity.com/market/listings/730/AUG%20%7C%20Bengal%20Tiger%20(Field-Tested)?filter=Katowice%202014",
     "checkedAt": "2026-03-19T07:30:33.421Z"
+  },
+  {
+    "skin": "AUG | Chameleon (Field-Tested)",
+    "sticker": "Crown (Foil)",
+    "totalListings": 1,
+    "cheapest": 729.48,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/AUG%20%7C%20Chameleon%20(Field-Tested)?filter=Crown%20(Foil)",
+    "checkedAt": "2026-03-19T07:31:18.782Z"
+  },
+  {
+    "skin": "AUG | Condemned (Field-Tested)",
+    "sticker": "Katowice 2014",
+    "totalListings": 1,
+    "cheapest": 88.58,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/AUG%20%7C%20Condemned%20(Field-Tested)?filter=Katowice%202014",
+    "checkedAt": "2026-03-19T07:31:55.967Z"
+  },
+  {
+    "skin": "AUG | Contractor (Field-Tested)",
+    "sticker": "Katowice 2014",
+    "totalListings": 1,
+    "cheapest": 1731.04,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/AUG%20%7C%20Contractor%20(Field-Tested)?filter=Katowice%202014",
+    "checkedAt": "2026-03-19T07:32:11.920Z"
   }
 ]
