@@ -1174,5 +1174,29 @@
     "cheapest": 17.31,
     "marketUrl": "https://steamcommunity.com/market/listings/730/AK-47%20%7C%20Safari%20Mesh%20(Field-Tested)?filter=Katowice%202014",
     "checkedAt": "2026-03-19T07:18:23.975Z"
+  },
+  {
+    "skin": "AK-47 | The Outsiders (Field-Tested)",
+    "sticker": "Crown (Foil)",
+    "totalListings": 1,
+    "cheapest": 290.03,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/AK-47%20%7C%20The%20Outsiders%20(Field-Tested)?filter=Crown%20(Foil)",
+    "checkedAt": "2026-03-19T07:23:44.890Z"
+  },
+  {
+    "skin": "AK-47 | Vulcan (Field-Tested)",
+    "sticker": "Katowice 2014",
+    "totalListings": 2,
+    "cheapest": 838.18,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/AK-47%20%7C%20Vulcan%20(Field-Tested)?filter=Katowice%202014",
+    "checkedAt": "2026-03-19T07:26:32.478Z"
+  },
+  {
+    "skin": "AUG | Bengal Tiger (Field-Tested)",
+    "sticker": "Katowice 2014",
+    "totalListings": 1,
+    "cheapest": 22.12,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/AUG%20%7C%20Bengal%20Tiger%20(Field-Tested)?filter=Katowice%202014",
+    "checkedAt": "2026-03-19T07:30:33.421Z"
   }
 ]
