@@ -1302,5 +1302,53 @@
     "cheapest": 25.73,
     "marketUrl": "https://steamcommunity.com/market/listings/730/AWP%20%7C%20Elite%20Build%20(Field-Tested)?filter=Katowice%202014",
     "checkedAt": "2026-03-19T07:47:30.754Z"
+  },
+  {
+    "skin": "AWP | Pit Viper (Field-Tested)",
+    "sticker": "Katowice 2014",
+    "totalListings": 17,
+    "cheapest": 5.45,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/AWP%20%7C%20Pit%20Viper%20(Field-Tested)?filter=Katowice%202014",
+    "checkedAt": "2026-03-19T07:55:19.359Z"
+  },
+  {
+    "skin": "AWP | Pit Viper (Field-Tested)",
+    "sticker": "Howling Dawn",
+    "totalListings": 3,
+    "cheapest": 103.82,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/AWP%20%7C%20Pit%20Viper%20(Field-Tested)?filter=Howling%20Dawn",
+    "checkedAt": "2026-03-19T07:55:24.687Z"
+  },
+  {
+    "skin": "AWP | Redline (Field-Tested)",
+    "sticker": "Katowice 2014",
+    "totalListings": 32,
+    "cheapest": 102.65,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/AWP%20%7C%20Redline%20(Field-Tested)?filter=Katowice%202014",
+    "checkedAt": "2026-03-19T07:56:07.415Z"
+  },
+  {
+    "skin": "AWP | Redline (Field-Tested)",
+    "sticker": "Howling Dawn",
+    "totalListings": 6,
+    "cheapest": 138.42,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/AWP%20%7C%20Redline%20(Field-Tested)?filter=Howling%20Dawn",
+    "checkedAt": "2026-03-19T07:57:18.241Z"
+  },
+  {
+    "skin": "AWP | Redline (Field-Tested)",
+    "sticker": "Crown (Foil)",
+    "totalListings": 2,
+    "cheapest": 136.1,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/AWP%20%7C%20Redline%20(Field-Tested)?filter=Crown%20(Foil)",
+    "checkedAt": "2026-03-19T07:57:23.573Z"
+  },
+  {
+    "skin": "AWP | Safari Mesh (Field-Tested)",
+    "sticker": "Katowice 2014",
+    "totalListings": 12,
+    "cheapest": 5,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/AWP%20%7C%20Safari%20Mesh%20(Field-Tested)?filter=Katowice%202014",
+    "checkedAt": "2026-03-19T08:00:44.774Z"
   }
 ]
