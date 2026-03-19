@@ -1470,5 +1470,45 @@
     "cheapest": 1152.31,
     "marketUrl": "https://steamcommunity.com/market/listings/730/FAMAS%20%7C%20Cyanospatter%20(Field-Tested)?filter=Katowice%202014",
     "checkedAt": "2026-03-19T08:56:50.356Z"
+  },
+  {
+    "skin": "FAMAS | Pulse (Field-Tested)",
+    "sticker": "Katowice 2014",
+    "totalListings": 2,
+    "cheapest": 132.64,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/FAMAS%20%7C%20Pulse%20(Field-Tested)?filter=Katowice%202014",
+    "checkedAt": "2026-03-19T09:03:01.173Z"
+  },
+  {
+    "skin": "FAMAS | Pulse (Field-Tested)",
+    "sticker": "Howling Dawn",
+    "totalListings": 1,
+    "cheapest": 120.82,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/FAMAS%20%7C%20Pulse%20(Field-Tested)?filter=Howling%20Dawn",
+    "checkedAt": "2026-03-19T09:03:06.504Z"
+  },
+  {
+    "skin": "FAMAS | Pulse (Field-Tested)",
+    "sticker": "Crown (Foil)",
+    "totalListings": 1,
+    "cheapest": 64.14,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/FAMAS%20%7C%20Pulse%20(Field-Tested)?filter=Crown%20(Foil)",
+    "checkedAt": "2026-03-19T09:03:11.845Z"
+  },
+  {
+    "skin": "FAMAS | Sergeant (Field-Tested)",
+    "sticker": "Katowice 2014",
+    "totalListings": 2,
+    "cheapest": 63.97,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/FAMAS%20%7C%20Sergeant%20(Field-Tested)?filter=Katowice%202014",
+    "checkedAt": "2026-03-19T09:03:49.022Z"
+  },
+  {
+    "skin": "FAMAS | Spitfire (Field-Tested)",
+    "sticker": "Katowice 2014",
+    "totalListings": 2,
+    "cheapest": 450,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/FAMAS%20%7C%20Spitfire%20(Field-Tested)?filter=Katowice%202014",
+    "checkedAt": "2026-03-19T09:04:04.990Z"
   }
 ]
