@@ -1878,5 +1878,45 @@
     "cheapest": 600,
     "marketUrl": "https://steamcommunity.com/market/listings/730/M4A4%20%7C%20Radiation%20Hazard%20(Field-Tested)?filter=Howling%20Dawn",
     "checkedAt": "2026-03-19T12:08:15.498Z"
+  },
+  {
+    "skin": "M4A4 | Tornado (Field-Tested)",
+    "sticker": "Katowice 2014",
+    "totalListings": 1,
+    "cheapest": 332.25,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/M4A4%20%7C%20Tornado%20(Field-Tested)?filter=Katowice%202014",
+    "checkedAt": "2026-03-19T12:11:08.569Z"
+  },
+  {
+    "skin": "M4A4 | Urban DDPAT (Field-Tested)",
+    "sticker": "Katowice 2014",
+    "totalListings": 3,
+    "cheapest": 79.35,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/M4A4%20%7C%20Urban%20DDPAT%20(Field-Tested)?filter=Katowice%202014",
+    "checkedAt": "2026-03-19T12:11:40.440Z"
+  },
+  {
+    "skin": "M4A4 | X-Ray (Field-Tested)",
+    "sticker": "Katowice 2014",
+    "totalListings": 2,
+    "cheapest": 190,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/M4A4%20%7C%20X-Ray%20(Field-Tested)?filter=Katowice%202014",
+    "checkedAt": "2026-03-19T12:11:56.408Z"
+  },
+  {
+    "skin": "M4A4 | Zirka (Field-Tested)",
+    "sticker": "Katowice 2014",
+    "totalListings": 7,
+    "cheapest": 126.88,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/M4A4%20%7C%20Zirka%20(Field-Tested)?filter=Katowice%202014",
+    "checkedAt": "2026-03-19T12:12:12.391Z"
+  },
+  {
+    "skin": "M4A4 | Zirka (Field-Tested)",
+    "sticker": "Howling Dawn",
+    "totalListings": 1,
+    "cheapest": 151.8,
+    "marketUrl": "https://steamcommunity.com/market/listings/730/M4A4%20%7C%20Zirka%20(Field-Tested)?filter=Howling%20Dawn",
+    "checkedAt": "2026-03-19T12:12:17.733Z"
   }
 ]
